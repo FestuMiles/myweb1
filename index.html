@@ -10,22 +10,120 @@
     <header>
         <nav>
             <a href="index.html" class="logo">Logo</a>
-            <div class="navigator">
+            <div class="navigator" id="navigator">
+                <img src="icon/close (1).png" alt="" height="20px" class="icons" onclick="hideMenu()">
                 <ul>
                     <li><a href="#">Book</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
+            <img src="icon/menu-button-of-three-horizontal-lines.png" alt="" height="20px" class="icons" onclick="showMenu()">
         </nav>
 
         <div class="home">
-            <h1>Welcome to Hotel</h1>
+            <h1>Welcome To My Hotel</h1>
             <p>Your Oasis of Confort and Luxury - Where Dreams Meet Confort.</p>
             <a href="#" class="btn" >Book</a>
         </div>
     </header>
     
+    <section class="services">
+        <h1>OUR SERVICES</h1>
+        <P>We offer a variety of services to enhance guests’ experiences. Guests can request anything they need 
+            or desire from their room, whether it’s food, beverages, or specific items. Room service ensures convenience
+             and comfort during their stay. We also provide transportation to and from the hotel.</P>
+             <div class="images">
+                <div class="image">
+                    <img src="images/-1x-1.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/download.jpeg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/intro-1669130906.jpg" alt="">
+                </div>
+             </div>
+             <div class="images">
+                <div class="image">
+                    <img src="images/transfer-1.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/2.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/traditional-full-american-breakfast-eggs-pancakes-with-bacon-and-toast.jpg_s1024x1024wisk20cz03ui5Oqyz8Ys_pG0bVWsgoz_v_E5Oct4x-0C-sAjME.jpg" alt="">
+                </div>
+             </div>
+    </section>
+
+    <!-- the price section  -->
+    <section class="pricing" id="pricing">
+        <h1>Our Prices</h1>
+        <div class="container">
+            <div class="box">
+                <h2>Single</h2>
+                <div class="image">
+                    <img src="images/-1x-1.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <p><span>$100</span>/night</p>
+                    <p>Rooms/apartments for singles at an affordable price.</p>
+                </div>
+                <a href="#" class="btn">Book</a>
+            </div>
+            <div class="box">
+                <h2>Non-Single</h2>
+                <div class="image">
+                    <img src="images/-1x-1.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <p><span>$90</span>/night for one person</p>
+                    <p>Rooms/apartments for non-singles at an affordable price.</p>
+                </div>
+                <a href="#" class="btn">Book</a>
+            </div>
+            <div class="box">
+                <h2>Couple</h2>
+                <div class="image">
+                    <img src="images/-1x-1.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <p><span>$150</span>/night</p>
+                    <p>Rooms/apartments for couples at an affordable price.</p>
+                </div>
+                <a href="#" class="btn">Book</a>
+            </div>
+        </div>
+    </section>
+
+<!-- the footer section -->
+ <footer>
+    <h3>About Us</h3>
+    <p>Health is an asset that helps us maintain the balance of life and a sound mind. It’s the true elixir for a happy life, leading to a calm and composed mind. Staying healthy involves physical, mental, and social well-being. When we prioritize our health, we can work productively and enjoy a better quality of life.</p>
+    <div class="icons">
+        <a href="https://www.jw.org/en/" ><img src="icon/facebook.png" alt="" height="20px"></a>
+        <a href="" ><img src="icon/Gmail-Logo.png" alt="" height="20px"></a>
+        <a href="" ><img src="icon/instagram (1).png" alt="" height="20px"></a>
+
+    </div>
+    <div class="credit">&copy;2024 created by Miles| All rights reserved.</div>
+ </footer>
+
+
+
+
+    <script>
+        var myNav = document.getElementById('navigator'); 
+        
+        function showMenu() {
+            myNav.style.right = '0';
+        }
+
+        function hideMenu() {
+            myNav.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>

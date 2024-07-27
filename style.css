@@ -73,3 +73,128 @@ header nav{
     border-radius: 5px;
 
 }
+
+nav .icons{
+    display: none;
+}
+
+@media(max-width:700px){
+    nav .icons{
+        display: block;
+        cursor: pointer;
+    }
+    .navigator{
+        position: fixed;
+        background: #fff;
+        height: 80vh;
+        width: 200px;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        right: -200px;
+    }
+    .navigator ul li{
+        display: block;
+    }
+    .navigator ul{
+        padding: 30px;
+    }
+}
+
+
+/* the services section     */
+
+.services{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.services h1{
+    font-weight: bolder;
+    font-size: 70px;
+    color: #333;
+}
+
+.services p{
+    padding: 20px 0;
+    color: #666;
+
+}
+
+.services .images{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.services .image{
+    flex-basis: 32%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.services .images img{
+    height: 200px;
+    display: block;
+    width: 100%;
+}
+
+.pricing{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing .container{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.pricing .box{
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    margin: 5px;
+}
+
+.pricing .container img{
+    height: 200px;
+}
+.pricing h1{
+    font-size: 80px;
+    padding-bottom: 20px;
+}
+.pricing h2{
+    padding: 50px 0;
+}
+.pricing p{
+    padding-top: 20px;
+}
+
+.pricing .caption{
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.pricing .btn{
+    margin-bottom: 50px;
+}
+.pricing span{
+    font-weight: bold;
+    color: #000;
+    font-size: xx-large;
+}
+
+footer{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+}
